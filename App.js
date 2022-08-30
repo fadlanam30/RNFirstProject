@@ -87,7 +87,7 @@ const App = () => {
             Button State Example
           </Text>
           <Text style={[styles.sectionDescription]}>
-            I am FFFFF, and I am {isHungry ? "hungry" : "kenyang"}!
+            I am GGGGGG, and I am {isHungry ? "hungry" : "kenyang"}!
           </Text>
           <Button 
               onPress={() => {
