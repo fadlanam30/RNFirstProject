@@ -94,7 +94,7 @@ const App = () => {
                 setIsHungry(false);
               }}
               disabled={!isHungry}
-              title={isHungry ? "Pour me some water, please!" : "Thank you!"}
+              title={isHungry ? "Pour me some milk, please!" : "Thank you!"}
             />
           <Text style={[styles.sectionTitle]}>
             Text Input Example
