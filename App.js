@@ -7,7 +7,7 @@
  */
 
 // import React from 'react';
-import React, { useState, useRef, useEffect } from 'react';
+import React, { Component, useState, useRef, useEffect } from 'react';
 // import type {Node} from 'react';
 import {
   Animated,
@@ -57,6 +57,16 @@ import {
 //   );
 // };
 
+class Loading extends Component {
+  render() {
+    return <ActivityIndicator 
+    size="large" 
+    color="#00ff00"
+    />
+    ;
+  }
+}
+
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -82,7 +92,7 @@ const App = () => {
           <Text style={[styles.sectionTitle]}>
             Loading Indicator Example
           </Text>
-          <ActivityIndicator size="large" color="#00ff00"/>
+          <Loading />
           <Text style={[styles.sectionTitle]}>
             Button State Example
           </Text>
